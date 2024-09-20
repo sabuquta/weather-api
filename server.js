@@ -5,7 +5,7 @@ const weatherRoutes = require('./src/routes/weather');
 const authRoutes = require('./src/routes/auth');
 const cors = require('cors'); 
 require('dotenv').config();
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = process.env.MONGO_URI;
 
 const app = express();
 const port = process.env.PORT || 5001;
