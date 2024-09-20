@@ -24,7 +24,7 @@ mongoose
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Hello from Vercel');
+  res.send('Hello from Heroku');
 });
 app.use('/api/auth', authRoutes);
 app.use('/api/weather', weatherRoutes);
