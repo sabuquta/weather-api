@@ -23,6 +23,9 @@ mongoose
   .catch((err) => console.error('MongoDB connection error:', err));
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Hello from Vercel');
+});
 app.use('/api/auth', authRoutes);
 app.use('/api/weather', weatherRoutes);
 
